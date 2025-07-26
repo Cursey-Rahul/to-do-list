@@ -111,3 +111,9 @@ li span:hover{
     border-radius: 50%;
    
 }
+ul li small {
+    font-size: 12px;
+    color: #666;
+    display: block;
+    margin-top: 5px;
+}

@@ -12,6 +12,11 @@ button.addEventListener("click",()=>{
         let span= document.createElement("span");
         span.innerHTML='\u00d7';
         li.appendChild(span);
+        let time = document.createElement("small");
+        time.innerText = "Created: " + new Date().toLocaleString();
+        li.appendChild(time);
+        
+
         savedata();
     }
     input.value='';
@@ -25,6 +30,7 @@ tasks.addEventListener("click",function(e){
         e.target.parentElement.remove();
         savedata();
     }
+    
         
     
 })
